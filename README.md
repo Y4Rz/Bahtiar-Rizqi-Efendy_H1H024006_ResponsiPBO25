@@ -4,29 +4,31 @@
 # shift awal : A
 # shift akhir : D
 
-# Pokémon Training App  
-Aplikasi sederhana berbasis PHP untuk menampilkan Pokémon, melakukan training stat, dan menyimpan riwayat perubahan.
+# Pokemon Training WEB  
+Ini adalah simulasi web sederhana berbasis PHP untuk melatih pokeom kadabra. untuk simulasi ini Trainer dapat melakukan training stat seperti: meditasi, menyerang, dan teleportasi. setelah trainer melatih pokemon data pelatihan disimpan di riwayat perubahan.
 
 ---
 
-## 1. Deskripsi Singkat
+## PENJELASAN
 Aplikasi ini memungkinkan pengguna untuk:
 
 - Melihat detail Pokémon (gambar, tipe, dan stat dasar)
-- Melakukan *training* untuk meningkatkan stat Pokémon
+- Melakukan training untuk meningkatkan stat Pokémon
 - Menyimpan semua perubahan stat ke dalam *history*
 - Melihat riwayat yang tersimpan dalam bentuk tabel interaktif
 
 Struktur utama aplikasi:
-- `index.php` — halaman utama & tampilan Pokémon  
-- `Train.php` — logika peningkatan stat / training  
-- `classes.php` — class Pokémon & manajemen history  
+- `index.php` — Menampilkan kartu Pokémon (nama, gambar, stat), Tombol Mulai Latihan!, Tombol Lihat Riwaya. 
+- `Train.php` — Mengolah logika training: Menambah stat Pokémon lalu Mengirim hasil latihan ke history.
+- `classes.php` — class Pokemon & manajemen history  
 - `history.php` — menampilkan riwayat perubahan stat  
 - `style.css` — gaya tampilan aplikasi  
 
 ---
 
-## ⚙️ 2. Cara Menjalankan Aplikasi
-
-### 🖥️ Menggunakan XAMPP (Localhost)
-1. Taruh semua file ke folder:
+## Cara Menjalankan Aplikasi
+untuk simulasi awal saya menggunakan laragon sebagai Localhost
+### Menggunakan LARAGON (Localhost)
+1. Buka Laragon
+2. Kilk Start all 
+3. klik kanan pada laragon pilih www/folder yang menyimpan kode responsi/klik folder tersebut hingga akhirnya berpindah ke laman web
