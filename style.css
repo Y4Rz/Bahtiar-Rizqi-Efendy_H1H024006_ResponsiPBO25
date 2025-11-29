@@ -1,0 +1,203 @@
+/* style.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    background-image: radial-gradient(#e0e0e0 1px, transparent 1px);
+    background-size: 20px 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dekorasi Pokeball di latar belakang */
+.pokeball-bg {
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 150px;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Card Pokemon */
+.pokemon-card {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    position: relative;
+    z-index: 1;
+}
+
+.pokemon-img {
+    width: 150px;
+    height: 150px;
+    filter: drop-shadow(0 10px 10px rgba(0,0,0,0.2));
+    transition: transform 0.3s ease;
+}
+
+.pokemon-img:hover {
+    transform: scale(1.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    text-align: left;
+    margin-top: 15px;
+    background: rgba(255,255,255,0.8);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.stat-item strong {
+    color: #555;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.stat-value {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Badge Tipe */
+.type-badge {
+    background-color: #F95587; /* Warna tipe Psychic */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Tombol */
+.btn-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #3b4cca; /* Pokemon Blue */
+    color: white;
+}
+.btn-primary:hover { background-color: #2a3990; }
+
+.btn-secondary {
+    background-color: #ffcb05; /* Pokemon Yellow */
+    color: #333;
+}
+.btn-secondary:hover { background-color: #e0b204; }
+
+/* Form Elements */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* --- Tambahan untuk Halaman History --- */
+
+.table-container {
+    overflow-x: auto; /* Agar bisa discroll di HP */
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: white;
+}
+
+.history-table thead {
+    background-color: #6f42c1; /* Warna Ungu Psychic */
+    color: white;
+}
+
+.history-table th, .history-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.history-table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.history-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.history-table tbody tr:hover {
+    background-color: #f1e7fe;
+}
+
+.arrow {
+    color: #F95587;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+.empty-state {
+    padding: 20px;
+    color: #777;
+    font-style: italic;
+}
