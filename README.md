@@ -32,3 +32,13 @@ untuk simulasi awal saya menggunakan laragon sebagai Localhost
 1. Buka Laragon
 2. Kilk Start all 
 3. klik kanan pada laragon pilih www/folder yang menyimpan kode responsi/klik folder tersebut hingga akhirnya berpindah ke laman web
+
+![2025-11-29 12-53-32 (2)](https://github.com/user-attachments/assets/e6a48734-d905-4d06-94ce-1cc0fe35b368)
+
+
+
+
+
+
+
+   
